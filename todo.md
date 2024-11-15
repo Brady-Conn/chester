@@ -1,0 +1,46 @@
+## Chess Engine
+    - Define data structures
+        - Pieces
+        - Board(game state)
+        - Possible moves - some sort of tree structure
+    - Define basic functions
+        - Movement
+            - Move piece to capture
+            - Move piece to empty square
+            - Move piece to empty square with check
+        - Capture
+            - Capture piece
+            - Capture piece with check
+        - Check
+            - Check if piece can move to square
+            - Check if piece can capture piece
+        - Endgame
+            - Checkmate
+            - Stalemate
+    - Define Engine Functions
+        - retrieve all possible moves to end state(find a way to optimize, store all moves in db?)
+        - Select best move(move with most winning routes)
+        - add option for randomness  to lower difficulty
+
+## Chess Game
+    - Landing page
+        - connect to game
+        - start solo game
+        - basic info and how to
+    - Game page
+        - display board
+        - display opponent
+        - display turn and timer
+        - allow user to make moves
+        - allow user to resign
+        - show win
+        - show draw
+        - show loss
+        - allow rematch
+            - rematch button
+                - show win/loos tally if rematch
+    - Server
+        - check move validity
+        - check if game is over
+        - update game state -> push to client(s)
+        

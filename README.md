@@ -1,5 +1,7 @@
 # Chester
 
+  A chess machine and game built with Elixir and Phoenix LiveView.
+
 To start your Phoenix server:
 
   * Run `mix setup` to install and setup dependencies
