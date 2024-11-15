@@ -17,7 +17,8 @@ defmodule Chester.Application do
       # Start a worker by calling: Chester.Worker.start_link(arg)
       # {Chester.Worker, arg},
       # Start to serve requests, typically the last entry
-      ChesterWeb.Endpoint
+      ChesterWeb.Endpoint,
+      Chester.Engine
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
