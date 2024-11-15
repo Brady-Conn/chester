@@ -71,6 +71,8 @@ defmodule Chester.Engine do
               }
   }
 
+  # TODO: define board state struct
+
   starting_board = %{
     pieces: %{
           "wp1" => %{
@@ -211,5 +213,32 @@ defmodule Chester.Engine do
     total_time: 0,
     white_moves: 0,
     black_moves: 0,
+    castling_available: false,
+    en_passant_available: false,
   }
+
+  def get_next_board_state(board_state, move) do
+    # TODO: implement
+  end
+
+  def check_for_castling_availability(board_state) do
+    # TODO: implement
+  end
+
+  def check_for_en_passant_availability(board_state) do
+    # TODO: implement
+  end
+
+  def check_for_checkmate(board_state) do
+    # TODO: implement
+    board_state
+  end
+
+  def check_for_stalemate(board_state) do
+    # TODO: implement
+  end
+
+  def check_for_check(board_state) do
+      # TODO: implement
+  end
 end
